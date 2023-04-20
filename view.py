@@ -3,7 +3,8 @@ from InquirerPy import inquirer, get_style
 class View:
 
     def menu(self,prompt, options):
-        '''This function creates an interactive Terminal menu.'''
+        # This function creates an interactive Terminal menu.
+        # it returns the selected Node 
 
         choice = inquirer.select(
             message= f"\n{prompt}",

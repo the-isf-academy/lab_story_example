@@ -1,4 +1,4 @@
-from InquirerPy import inquirer, get_style        
+from InquirerPy import inquirer, get_style  # importing a Terminal menu system
 
 class View:
 
@@ -22,6 +22,8 @@ class View:
         return choice
     
     def start_game(self, story):
+        # prints out a start message for the user,
+        # including the title and description of the start node
         print("="*50)
         print(f"Title: {story.title}")
         print(f"\n{story.current_node.option_title}")

@@ -3,16 +3,18 @@ class Node():
         # initializes a node object with its properties
         
         self.id = id # a unique id
-        self.children = []  #a list of node objects
+        self.children = []  #a list of Node objects
         self.option_title = option_title  # text for display in the menu          
         self.description = description  # text to show if this option is selected 
 
     def __str__(self):
-        # allows a node to be printed out
+        # defines how a node will be printed out
+        
         return f"{self.option_title}"
 
-    def add_child(self,child_node):
+    def add_child(self, child_node):
         # adds a new child to this node
+
         self.children.append(child_node)
 
     def find(self, id):
@@ -26,7 +28,7 @@ class Node():
         
         for child in self.children:
             n = child.find(id)
-            if n: 
+            if n is not None: 
                 return n
         return None
     

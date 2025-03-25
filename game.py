@@ -5,7 +5,7 @@ view = View()
 
 view.start_game(main_story)
 
-while main_story.is_finished() == False: 
+while main_story.is_running() == False: 
 
     chosen_node = view.menu("[what will you do?]", main_story.get_current_children())
 

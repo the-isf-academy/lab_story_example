@@ -3,9 +3,9 @@ from model_story import Story
 # create a story object
 main_story = Story(
     title='Lunch.',
-    start_id = 'lunch',
-    start_option_title = "It's lunch time.",
-    start_description= "Where will you go?"
+    first_id = 'lunch',
+    first_option_title = "It's lunch time.",
+    first_description= "Where will you go?"
 )
 
 # add node for bball court
